@@ -302,7 +302,7 @@ figure img {
 footer {
   padding: 0px 10px 0 10px;
   background-color: var(--secondaryColor);
-  /* height: 234px; */
+  text-align-last: center;
 }
 footer img {
   margin: 13px 45px 0;
