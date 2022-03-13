@@ -1,3 +1,28 @@
+/*
+	Author:
+		Luis Rodríguez Fallas.
+		rodriguezfallasluis@gmail.com.
+	Creation date:
+		Wednesday, February 23, 2022.
+    Last update:
+		Sunday, March 13, 2022.
+
+	Typographic fonts:
+    Title h1: Lusitana
+    Menu: Michroma
+    SubTitle: Michroma
+    Paragraphs: Michroma
+    Paragraphs Michroma
+
+	Color Palettes
+		Dominant Color: #1c1f2a;
+		Tonic Color or complementary: #00cc00;
+    Secondary Color: #242424;
+		Mediation Color:  #1c1d1e;
+    Background Color: #1c1f2a;
+
+*/
+
 /* Normalize */
 @import url(./css/normalize.css);
 /*font*/
@@ -17,7 +42,8 @@
   font-weight: 400;
 }
 
-* {
+/* VARIABLES */
+:root {
   --mainColor: #1c1f2a;
   --ComplementColor: #00cc00;
   --secondaryColor: #242424;
@@ -113,7 +139,7 @@ body {
   border-radius: 20px;
   background: var(--mainColor);
   position: absolute;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -135,6 +161,7 @@ body {
 /*-----------------------------------------CHECK-BOX-----------------------------------------*/
 #chk:checked ~ .hiddenMenu {
   right: 0px;
+  display: flex;
 }
 #chk:checked ~ .menu span {
   background: var(--mainColor);
