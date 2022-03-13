@@ -300,11 +300,11 @@ figure img {
 }
 .card__Statistics h4 {
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 400;
 }
 .card__Statistics p {
   font-size: 10px;
-  font-weight: 100;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
