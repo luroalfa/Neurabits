@@ -28,17 +28,17 @@
 /*font*/
 @font-face {
   font-family: var(--fontFamilyLusitana);
-  src: url(../font/Lusitana-Regular.woff) format("ttf");
+  src: url(./font/Lusitana-Regular.woff) format("ttf");
   font-weight: 400;
 }
 @font-face {
   font-family: var(--fontFamilyLusitana);
-  src: url(../font/Lusitana-Bold.ttf) format("ttf");
+  src: url(./font/Lusitana-Bold.ttf) format("ttf");
   font-weight: 700;
 }
 @font-face {
   font-family: var(--fontFamilyMicrhoma);
-  src: url(../font/Michroma-Regular.ttf) format("ttf");
+  src: url(./font/Michroma-Regular.ttf) format("ttf");
   font-weight: 400;
 }
 
