@@ -69,14 +69,12 @@ body {
   font-family: var(--fontFamilyLusitana);
 }
 .containerGrid {
-  /* border: 1px solid yellow; */
   margin: 0 20px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 #navbar {
   grid-column: span 12;
-  /* border: 1px solid yellow; */
   height: 40px;
   width: 100%;
   display: flex;
@@ -92,7 +90,6 @@ body {
   text-decoration: none;
   color: #fff;
 }
-
 #navbar .menu {
   position: absolute;
   /* top: 10px; */
@@ -100,7 +97,6 @@ body {
   right: 20px;
   z-index: 10;
 }
-
 #navbar .menu span {
   cursor: pointer;
   width: 25px;
@@ -131,7 +127,6 @@ body {
   left: 0;
   transition: 0.5s;
 }
-
 #navbar .hiddenMenu {
   border: 1px solid var(--ComplementColor);
   width: 200px;
@@ -179,13 +174,18 @@ body {
   transform: rotate(135deg);
   background: white;
 }
-
 .section {
   display: flex;
   flex-direction: column;
   align-items: center;
   grid-column: span 12;
-  margin-bottom: 85px;
+  margin: 0 0 20px 0;
+}
+.sectionImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: span 12;
 }
 .containerImage {
   width: 330px;
@@ -193,20 +193,15 @@ body {
 #imga {
   width: 100%;
 }
-.containerImage {
-  width: 330px;
+.contentContainer {
+  text-align: center;
 }
-
 .title {
   font-size: var(--titleSizeMobile);
   text-align: center;
   font-style: bold;
   text-transform: capitalize;
   font-family: var(--fontFamilyLusitana);
-}
-
-.contentContainer {
-  text-align: center;
 }
 .title span {
   color: var(--ComplementColor);
@@ -234,8 +229,8 @@ body {
 }
 .advertisingImage {
   grid-column: span 12;
-  /* width: 100%; */
 }
+
 /* ************************************ CARDS */
 .containerCads {
   grid-column: span 12;
@@ -244,7 +239,6 @@ body {
 }
 .card {
   background-color: var(--secondaryColor);
-  box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.5);
   margin-bottom: 50px;
   border-radius: 20px;
 }
@@ -269,7 +263,6 @@ figure img {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 100;
 }
 .content p {
   font-size: 20px;
@@ -286,7 +279,6 @@ figure img {
   border-style: none;
   cursor: pointer;
 }
-
 .card__Statistics {
   grid-column: span 12;
   background-color: var(--thirdColor);
@@ -307,7 +299,6 @@ figure img {
   font-weight: 400;
   text-transform: uppercase;
 }
-
 footer {
   padding: 0px 10px 0 10px;
   background-color: var(--secondaryColor);
@@ -321,4 +312,64 @@ footer p {
   text-align: center;
   margin: 20px 0 0 0;
   padding-bottom: 10px;
+}
+
+/* ************************************ RESPONSIVE */
+@media screen and (min-width: 820px) {
+  .section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .containerImage {
+    grid-column: span 6;
+    width: 330px;
+    justify-self: center;
+  }
+  .contentContainer {
+    grid-column: span 6;
+  }
+  .title {
+    font-size: var(--titleSizeTablet);
+  }
+  .contentContainer p {
+    font-size: var(--paragraphSizeTablet);
+  }
+  .subTitle {
+    font-size: var(--subTitleSizeTablet);
+  }
+  .sectionReverse article:nth-of-type(1) {
+    order: 2;
+  }
+
+  .containerCads {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .card {
+    width: 330px;
+    height: 720px;
+    background-color: var(--secondaryColor);
+    margin-bottom: 50px;
+    border-radius: 20px;
+    position: relative;
+  }
+  figure img {
+    width: 290px;
+    height: 263px;
+  }
+
+  .card__Statistics {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .content {
+    height: 293px;
+    position: relative;
+  }
+  .content button {
+    position: absolute;
+    bottom: 20px;
+  }
 }

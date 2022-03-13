@@ -45,7 +45,8 @@
       </section>
       <!-- End of Section 1 -->
       <!-- Section 2 -->
-      <section class="section">
+      <section class="section sectionReverse">
+        
         <article class="containerImage">
           <img id="imga" src="./img/mobile/Reconocimiento facial.png" alt="face recognition" />
         </article>
@@ -56,6 +57,7 @@
           </p>
           <button>Get demo</button>
         </article>
+
       </section>
       <!-- End of Section 2 -->
       <!-- Section 3 -->
@@ -73,8 +75,11 @@
       </section>
       <!-- End of Section 3 -->
       <!-- Advertising banner -->
-      <section class="section">
-        <img id="advertisingImage" src="./img/mobile/Banner-Mobile.png" alt="">
+      <section class="sectionImage">
+        <picture>
+          <source class="advertisingImage" srcset="./img/tablet/Banner.png" media="(min-width: 820px)">
+          <img class="advertisingImage" src="./img/mobile/Banner-Mobile.png" alt="">
+        </picture>
       </section>
       <!-- End of Advertising banner -->
       <!-- Sub title -->
@@ -82,6 +87,9 @@
       <!-- End of Sub title -->
       <!-- Cards container -->
       <section class="containerCads">
+
+
+
         <article class="card">
           <div class="card__Container">
             <figure>
@@ -108,6 +116,9 @@
             </div>
           </div>           
         </article> 
+
+
+
         <article class="card">
           <div class="card__Container">
             <figure>
@@ -193,7 +204,10 @@
 
     <!-- Footer -->
       <footer>
-        <img src="./img/mobile/Logo-Mobile.svg" alt="Logo">
+        <picture>
+          <source srcset="./img/tablet/LOGOCOMPLETO.svg" media="(min-width: 820px)">
+          <img src="./img/mobile/Logo-Mobile.svg" alt="Logo">
+        </picture>
         <p>© COPYRIGHT 2022. NEURABITS. All Rights Reserved.</p>
       </footer>
       <!-- End of Footer -->
