@@ -181,6 +181,9 @@ body {
 }
 
 .section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   grid-column: span 12;
   margin-bottom: 85px;
 }
@@ -275,7 +278,7 @@ figure img {
 .content button {
   grid-column: span 12;
   text-transform: uppercase;
-  width: 290px;
+  width: 100%;
   height: 40px;
   background-color: var(--ComplementColor);
   color: white;
@@ -306,14 +309,15 @@ figure img {
 }
 
 footer {
+  padding: 0px 10px 0 10px;
   background-color: var(--secondaryColor);
   /* height: 234px; */
 }
 footer img {
-  margin: 13px;
+  margin: 13px 45px 0;
 }
 footer p {
-  font-size: 12px 10px 0 10px;
+  font-size: 12px;
   text-align: center;
   margin: 20px 0 0 0;
 }
