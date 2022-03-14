@@ -195,6 +195,7 @@ body {
 }
 .contentContainer {
   text-align: center;
+  width: 330px;
 }
 .title {
   font-size: var(--titleSizeMobile);
@@ -233,31 +234,51 @@ body {
 
 /* ************************************ CARDS */
 .containerCads {
+  gap: 20px;
   grid-column: span 12;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .card {
+  width: 330px;
+  height: 720px;
   background-color: var(--secondaryColor);
-  margin-bottom: 50px;
   border-radius: 20px;
+  width: 330px;
+  position: relative;
 }
 .card__Container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   padding: 20px;
+  text-align: center;
 }
-figure {
+.card__Container picture img {
+  width: 290px;
+  height: 263px;
+}
+picture {
   grid-column: span 12;
   margin: 20px 0;
 }
-figure img {
+picture img {
   grid-column: span 12;
-  width: 100%;
   border-radius: 20px;
+  width: 100%;
 }
 .content {
   grid-column: span 12;
+  width: 290px;
+}
+.content picture {
+  width: 290px;
+  height: 263px;
+}
+
+.content {
+  height: 293px;
+  position: relative;
 }
 .content h3 {
   font-size: 20px;
@@ -278,6 +299,9 @@ figure img {
   border-radius: 50px;
   border-style: none;
   cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
 }
 .card__Statistics {
   grid-column: span 12;
@@ -286,6 +310,9 @@ figure img {
   border-bottom-right-radius: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .card__Statistics div {
   text-align: center;
@@ -300,11 +327,13 @@ figure img {
   text-transform: uppercase;
 }
 footer {
+  margin-top: 50px;
   padding: 0px 10px 0 10px;
   background-color: var(--secondaryColor);
   text-align-last: center;
 }
 footer img {
+  width: 270px;
   margin: 13px 45px 0;
 }
 footer p {
@@ -339,37 +368,5 @@ footer p {
   }
   .sectionReverse article:nth-of-type(1) {
     order: 2;
-  }
-
-  .containerCads {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-  }
-  .card {
-    width: 330px;
-    height: 720px;
-    background-color: var(--secondaryColor);
-    margin-bottom: 50px;
-    border-radius: 20px;
-    position: relative;
-  }
-  figure img {
-    width: 290px;
-    height: 263px;
-  }
-
-  .card__Statistics {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-  .content {
-    height: 293px;
-    position: relative;
-  }
-  .content button {
-    position: absolute;
-    bottom: 20px;
   }
 }
