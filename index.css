@@ -207,7 +207,6 @@ body {
 .title {
   font-size: var(--titleSizeMobile);
   text-align: center;
-  font-style: bold;
   text-transform: capitalize;
   font-family: var(--fontFamilyLusitana);
 }
